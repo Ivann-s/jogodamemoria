@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória - Países do Mundo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Jogo da Memória - Países do Mundo</h1>
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-label">Tentativas:</span>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Tempo:</span>
+                    <span id="timer">00:00</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Pares:</span>
+                    <span id="pairs">0/12</span>
+                </div>
+            </div>
+            <button id="restart-btn" class="restart-btn">🔄 Reiniciar Jogo</button>
+        </header>
+
+        <main>
+            <div id="game-board" class="game-board">
+                <!-- As cartas serão geradas dinamicamente pelo JavaScript -->
+            </div>
+        </main>
+
+        <div id="victory-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>🎉 Parabéns!</h2>
+                <p>Você completou o jogo!</p>
+                <div class="final-stats">
+                    <p>Tentativas: <span id="final-attempts">0</span></p>
+                    <p>Tempo: <span id="final-time">00:00</span></p>
+                </div>
+                <button id="play-again-btn" class="play-again-btn">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
